@@ -32,6 +32,15 @@ export default function CartTotals({ value }) {
               <span className="text-title">total :</span>
               &#8377;<strong>{cartTotal}</strong>
             </h5>
+            <Link to="/Checkout">
+              <button
+                className="btn btn-success text-uppercase mb-3 px-5"
+                type="button"
+                onClick={() => clearCart()}
+              >
+                Checkout
+              </button>
+            </Link>
           </div>
         </div>
       </div>
