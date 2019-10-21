@@ -14,12 +14,12 @@ class Cart extends Component {
             const { cart } = value;
             if (cart.length > 0) {
               return (
-                <React.Fragment>
+                <div className="container">
                   <Title name="your" title="cart" />
                   <CartColumns />
                   <CartList value={value} />
                   <CartTotals value={value} />
-                </React.Fragment>
+                </div>
               );
             } else {
               return <EmptyCart />;
